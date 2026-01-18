@@ -132,7 +132,8 @@ nav{
 }
 
 /* About section style */
-.about-section{
+.about-section ,
+.feature-container{
     background-color: #1A0B2E;
     max-width: 100%;
     padding: 3.125rem 12rem 7.5rem;
@@ -180,4 +181,34 @@ nav{
     color: #FFFFFF;
     line-height: 1.25rem;
     font-size: 1rem;
+}
+/* Features section style */
+.feature-header{
+    justify-items: center;
+    margin: 7.5rem 12.5rem;
+}
+
+.feature-box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 2px solid red;
+}
+
+.feature-box1{
+    grid-row: span 2;
+    border:2px solid #00FF88;
+}
+
+.feature-box2,
+.feature-box3{
+    grid-column: span 2;
+}
+
+.feature-box4{
+    grid-column: span 2;
+}
+
+.feature-box{
+    
 }
