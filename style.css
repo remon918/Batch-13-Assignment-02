@@ -62,9 +62,6 @@ nav{
    position: relative;
 }
 
-.banner-img-container{
-    /* margin-bottom: 40px; */
-}
 
 .banner-img{
     position: absolute;
@@ -297,9 +294,6 @@ nav{
 }
 
 /* host style */
-.about-host{
-/* align-content: center; */
-}
 
 .host-info{
     background-color: #2a1246;
