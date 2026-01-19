@@ -54,6 +54,10 @@ nav{
     cursor: pointer;
 }
 
+.menu{
+    display: none;
+}
+
 /* banner style */
 .banner-container{
    background: url(./assets/hero-bg.png);
@@ -257,6 +261,7 @@ nav{
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.5rem;
     margin-top: 1rem;
+
 }
 
 .content-container{
@@ -408,18 +413,27 @@ footer{
 
 @media screen and (max-width:576px) {
 
+     /* navbar style */
+      .btn-container,
+      .nav-menu{
+        display: none;
+      }
+      nav{
+        justify-content: space-between;
+      }
+      .menu{
+        display: inline;
+      }
+    /* /* Banner style */
+
+
+/* Episodes style */
     .content-container{
         flex-direction: column;
     }
     .youtube-content iframe{
         width: 100%;
     }
-
-    /* navbar style */
-
-    /* /* Banner style */
-    /* episodes section style */
-
 /* About Section style */
     .about-section {
     padding: 1rem;
@@ -443,6 +457,11 @@ footer{
     grid-template-rows: repeat(1,1fr);
    }
 
+   .featured-episodes h2{
+    font-size: 2.49rem;
+    
+
+}
    .about-container{
     max-width: 100%;
     padding: 0 1rem;
@@ -500,4 +519,27 @@ footer{
     /* align-content: center; */
 }
 
+/* Footer Style */
+    footer{
+    background: url(./assets/footer-bg.png);
+    /* background-repeat: no-repeat; */
+    /* background-position:top bottom , left right ; */
+    max-width: 100%;
+    /* height: 26rem; */
+    /* background-position: center; */
+    /* background-position: auto; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-size: 100%;
+}
+
+.footer-container{
+    max-width: 90%;
+    padding:3rem;
+}
+
+.social-icon-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 }
