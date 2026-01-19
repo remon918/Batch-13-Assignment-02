@@ -242,16 +242,58 @@ nav{
 /* Featured Episodes and Host section style */
 .featured-episodes{
     max-width: 75rem;
-}
-
-.featured-episodes{
     justify-items: center;
 }
 
-.content-container{
-    
+
+
+.featured-episodes h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2.5rem;
 }
 
+.content-container{
+    display: flex;
+    gap: 1.875rem;
+    /* border-radius: 20px; */
+    /* border: 2px solid red; */
+    margin-bottom: 7.5rem;
+}
+
+.youtube-content iframe{
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.content-details{
+    padding: 1.5rem;
+    background-color: #230E3D;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.youtube-content h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:  rgba(255, 255, 255, 1) ;
+}
+
+.youtube-content p{
+    color: rgba(255, 255, 255, 0.652);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.youtube-content .timer{
+    color: #00FF88;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 /* footer style */
 footer{
