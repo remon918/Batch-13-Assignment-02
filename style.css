@@ -570,7 +570,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     padding:2rem;
-    max-width: 90%;
+    max-width: 100%;
     justify-items: center;
     text-align: center;
 }
