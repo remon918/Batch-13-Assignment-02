@@ -208,11 +208,12 @@ nav{
     padding: 2.5rem;
     border-radius: 2.5rem;
     background-color: rgba(53, 17, 101, 0.4);
+    align-content: center;
 }
 
 #box-1{
     grid-row: span 2;
-    align-content: center;
+    
 }
 
 #box-2{
@@ -246,12 +247,12 @@ nav{
 }
 
 
-
 .featured-episodes h2{
     font-size: 3rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.5rem;
+    margin-top: 1rem;
 }
 
 .content-container{
@@ -295,6 +296,53 @@ nav{
     font-weight: 500;
 }
 
+/* host style */
+.about-host{
+/* align-content: center; */
+}
+
+.host-info{
+    background-color: #2a1246;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+
+.host-img{
+    align-content: center;
+}
+
+.host-details{
+    grid-column: span 3;
+    align-content: center;
+}
+
+.host-details h3{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.host-details p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.652);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icons{
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    padding: 0.75rem 0.81rem;
+    border-radius: 50%;
+}
 /* footer style */
 footer{
     background: url(./assets/footer-bg.png);
