@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.inter-font {
+.inter-font-family {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
@@ -58,21 +58,21 @@ nav{
 .banner-container{
    background: url(./assets/hero-bg.png);
    height: 47.5rem;
-   max-width: 100rem;
-   position: relative;
+   max-width: 100%;
+   background-position: center;
 }
 
 
 .banner-img{
     position: absolute;
-    left: 41%;
-    top: 15%;
+    left: 38.3%;
+    top: 25%;
 }
 
 .banner-img2{
     position: absolute;
-    left: 49%;
-    top: 25%;
+    left: 46.5%;
+    top: 36%;
 }
 
 .btn2{
@@ -83,14 +83,14 @@ nav{
     font-size: 1.125rem;
     font-weight: 600;
     position: absolute;
-    left: 59%;
-    top: 18%;
+    left: 56%;
+    top: 28%;
 }
 
 .banner-about{
     position: absolute;
-    left: 42%;
-    top: 70%;
+    left: 39.5%;
+    top: 75%;
     
 }
 
@@ -126,11 +126,11 @@ nav{
     /* background-image: linear-gradient(90deg,#f7e93f,#FB09B4,#9100F8); */
     background-color: transparent;
     cursor: pointer;
+    
 }
 
 /* About section style */
-.about-section ,
-.host-content-container{
+.about-section {
     background-color: #1A0B2E;
     max-width: 100%;
     padding: 3.125rem 12rem 7.5rem;
@@ -238,11 +238,18 @@ nav{
 }
 
 /* Featured Episodes and Host section style */
+
+
 .featured-episodes{
     max-width: 75rem;
     justify-items: center;
 }
 
+.host-content-container{
+    background-color: #1A0B2E;
+    max-width: 100%;
+    padding: 3.125rem 12rem 7.5rem;
+}
 
 .featured-episodes h2{
     font-size: 3rem;
@@ -294,6 +301,10 @@ nav{
 }
 
 /* host style */
+.about-host{
+    max-width: 100%;
+    justify-items: center;
+}
 
 .host-info{
     background-color: #2a1246;
@@ -336,14 +347,17 @@ nav{
     border: 1px solid rgba(255, 255, 255, 0.178);
     padding: 0.75rem 0.81rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 /* footer style */
 footer{
     background: url(./assets/footer-bg.png);
-    background-repeat: no-repeat;
-    background-position:top bottom , left right ;
-    max-width: 100rem;
+    /* background-repeat: no-repeat; */
+    /* background-position:top bottom , left right ; */
+    max-width: 100%;
     height: 26rem;
+    background-position: center;
+    right: 10%;
 }
 
 .footer-container{
@@ -355,9 +369,9 @@ footer{
 .footer-container h1{
     color: rgba(255, 255, 255, 1);
     text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
 }
 
 .footer-container span{
@@ -369,15 +383,16 @@ footer{
 .social-icon-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
-    align-items: center;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    /* align-items: center; */
+    margin-bottom: 1rem;
 }
 
 .social-icon{
   position: relative;
   align-items: center;
-  left: 45%;
+  left: 25%;
+  cursor: pointer;
 }
 
 #duck{
@@ -387,4 +402,102 @@ footer{
 .footer-container p{
     color: #fafafa8d;
     line-height: 1.5rem;
+    position: relative;
+    left: 1%;
+}
+
+@media screen and (max-width:576px) {
+
+    .content-container{
+        flex-direction: column;
+    }
+    .youtube-content iframe{
+        width: 100%;
+    }
+
+    /* navbar style */
+
+    /* /* Banner style */
+    /* episodes section style */
+
+/* About Section style */
+    .about-section {
+    padding: 1rem;
+}
+
+    .about-container h2{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .stars{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+/* Feature section style */
+    .feature-box-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+   }
+
+   .about-container{
+    max-width: 100%;
+    padding: 0 1rem;
+    /* margin-bottom: 10rem; */
+}
+
+   .feature-header h2{
+    font-size: 2.2rem;
+   }
+
+   .feature-container{
+    padding:1rem;
+}
+
+   #box-1{
+    grid-row: span 1;
+    
+}
+
+#box-2{
+    grid-column: span 1;
+}
+
+#box-3{
+    grid-column: span 1;
+}
+
+#box-4{
+    grid-column: span 1;
+}
+
+    /* Host Section Style */
+
+    .host-content-container{
+        padding: 1rem;
+    }
+    .host-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding:2rem;
+    max-width: 90%;
+    justify-items: center;
+    text-align: center;
+}
+
+.social-icons{
+    justify-content: center;
+}
+    .host-img{
+    grid-row: span 1;
+}
+
+    .host-details{
+    grid-row: span 1;
+    /* align-content: center; */
+}
+
 }
